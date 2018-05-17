@@ -249,7 +249,7 @@ public class InputForm extends javax.swing.JFrame {
         nonUniqueLabel.setText("Phone Number Matched");
         nonUniqueLabel.setVisible(false);
         getContentPane().add(nonUniqueLabel);
-        nonUniqueLabel.setBounds(329, 171, 221, 20);
+        nonUniqueLabel.setBounds(120, 171, 570, 20);
 
         PostcodeLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         PostcodeLabel.setText("Postcode:");
@@ -421,7 +421,9 @@ public class InputForm extends javax.swing.JFrame {
             if(!numDB.isEmpty())
             {
                 uniqueLabel.setVisible(false);
+                nonUniqueLabel.setText(num+" is Mached! ");
                 nonUniqueLabel.setVisible(true);
+                phoneNumberTextField.setText("");
             }
             else
             {
